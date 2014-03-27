@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs for page users.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="file-name">/core/functions/users.php</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-functions">Functions</a>
+			</div>
+	<div class="info-box-body">	
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Funkcje odpowiadajace za uzytkownikow</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Karol Dzialowski</li>
+			</ul>
+		
+			</div>
+</div>
+		
+
+	
+	
+	
+	<a name="sec-functions"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Functions</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<span class="disabled">Functions</span>
+		</div>
+		<div class="info-box-body">	
+			<a name="functionemail_exists" id="functionemail_exists"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">email_exists</span> (line <span class="line-number">98</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Czy email jest zajety</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			email_exists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionlogged_in" id="functionlogged_in"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="method-title">logged_in</span> (line <span class="line-number">76</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Czy jest zalogowany</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			logged_in
+		</span>
+				()
+			</div>
+
+		
+	
+</div>
+<a name="functionlogin" id="functionlogin"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">login</span> (line <span class="line-number">147</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Logowanie uzytkownika</p>
+<p class="description"><p>Poberia id uzytkownika z danej nazwy. Zabezpiecza username i hashuje haslo.  Zwraca czy dane sie zgadzaja.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			login
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionregister_user" id="functionregister_user"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="method-title">register_user</span> (line <span class="line-number">19</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Rejestruj uzytkownika</p>
+<p class="description"><p>Zabezpiecza wyslane dane i hashuje haslo. Tablice z danymi zamienia na dwa  stringi: klucze i wartosci. Wartosci sa w pojedynczych cudzyslowiach i  odseparowane przecinkami. Czyli zachowujemy skladnie zapytania.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			register_user
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$register_data</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$register_data</span><span class="var-description">: Dane do rejestracji</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionuser_active" id="functionuser_active"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">user_active</span> (line <span class="line-number">109</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Czy uzytkownik nie jest zbanowany</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			user_active
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionuser_count" id="functionuser_count"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="method-title">user_count</span> (line <span class="line-number">37</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ilosc zarejestrowanych uzytkownikow</p>
+<p class="description"><p>Jezeli ktos ma ustawione active na 0 to znaczy ze jest zbanowany i nie liczy  sie w tej funkcji</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Ilosc zarejestrowanych uzytkownikow</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			user_count
+		</span>
+				()
+			</div>
+
+		
+	
+</div>
+<a name="functionuser_data" id="functionuser_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">user_data</span> (line <span class="line-number">55</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Pobiera dane informacje o uzytkowniku</p>
+<p class="description"><p>W tej funkcji mozemy podac wiecej parametrow. Wysyla zapytanie do bazy danych  jezeli podane jest wiecej niz jeden argument i o te argumenty prosi baze danych.</p><p>Przyklad: user_data($session_user_id, 'user_id', 'username', 'password','first_name', 'last_name', 'email');</p><p>http://pl1.php.net/func_get_args  http://pl1.php.net/func_num_args</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Dane o uzytkowniku</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			user_data
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$user_id</span><span class="var-description">: Id uzytkownika</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionuser_exists" id="functionuser_exists"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="method-title">user_exists</span> (line <span class="line-number">86</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Czy istnieje uzytkownik</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			user_exists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionuser_id_from_username" id="functionuser_id_from_username"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">user_id_from_username</span> (line <span class="line-number">131</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Id z nazwy uzytkownika</p>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			user_id_from_username
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span>			</li>
+				</ul>
+		
+	
+</div>
+<a name="functionuser_moderator" id="functionuser_moderator"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="method-title">user_moderator</span> (line <span class="line-number">120</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Czy uzytkownik jest moderatorem</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			user_moderator
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+			</div>
+
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span>			</li>
+				</ul>
+		
+	
+</div>
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 07 Mar 2014 19:13:50 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>
