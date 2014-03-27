@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Czas wygenerowania: 27 Mar 2014, 19:53
+-- Czas wygenerowania: 27 Mar 2014, 20:25
 -- Wersja serwera: 5.5.21-log
 -- Wersja PHP: 5.3.20
 
@@ -28,13 +28,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `articles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` text NOT NULL,
-  `content` text NOT NULL,
-  `excerpt` text NOT NULL,
-  `author` text NOT NULL,
+  `title` text COLLATE utf8_polish_ci NOT NULL,
+  `content` text COLLATE utf8_polish_ci NOT NULL,
+  `excerpt` text COLLATE utf8_polish_ci NOT NULL,
+  `author` text COLLATE utf8_polish_ci NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=12 ;
 
 --
 -- Zrzut danych tabeli `articles`
@@ -53,12 +53,12 @@ INSERT INTO `articles` (`id`, `title`, `content`, `excerpt`, `author`, `date`) V
 CREATE TABLE IF NOT EXISTS `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `article_id` int(11) NOT NULL,
-  `content` text NOT NULL,
-  `author` varchar(255) NOT NULL,
+  `content` text COLLATE utf8_polish_ci NOT NULL,
+  `author` varchar(255) COLLATE utf8_polish_ci NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `active` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=37 ;
 
 --
 -- Zrzut danych tabeli `comments`
@@ -72,7 +72,8 @@ INSERT INTO `comments` (`id`, `article_id`, `content`, `author`, `date`, `active
 (32, 11, 'lubie szafta ', 'szaft', '2014-03-14 14:40:02', 1),
 (33, 11, ' 2341123412342342341', '1234234234', '2014-03-14 14:41:10', 1),
 (34, 11, ' 1111111111111', '11111', '2014-03-14 14:42:35', 1),
-(35, 11, ' 11111111111', '11111111', '2014-03-14 14:44:17', 1);
+(35, 11, ' 11111111111', '11111111', '2014-03-14 14:44:17', 1),
+(36, 10, ' testowy na 10', 'testowy na 10', '2014-03-27 19:24:22', 1);
 
 -- --------------------------------------------------------
 
@@ -83,13 +84,13 @@ INSERT INTO `comments` (`id`, `article_id`, `content`, `author`, `date`, `active
 CREATE TABLE IF NOT EXISTS `comments2` (
   `id` int(11) NOT NULL,
   `article_id` int(11) NOT NULL,
-  `content` text NOT NULL,
-  `author` varchar(255) NOT NULL,
+  `content` text COLLATE utf8_polish_ci NOT NULL,
+  `author` varchar(255) COLLATE utf8_polish_ci NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `active` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
 -- Zrzut danych tabeli `comments2`
@@ -106,24 +107,24 @@ INSERT INTO `comments2` (`id`, `article_id`, `content`, `author`, `date`, `activ
 
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(32) NOT NULL,
-  `password` varchar(32) NOT NULL,
-  `first_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  `email` varchar(255) NOT NULL,
+  `username` varchar(32) COLLATE utf8_polish_ci NOT NULL,
+  `password` varchar(32) COLLATE utf8_polish_ci NOT NULL,
+  `first_name` varchar(100) COLLATE utf8_polish_ci NOT NULL,
+  `last_name` varchar(100) COLLATE utf8_polish_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_polish_ci NOT NULL,
   `active` int(11) NOT NULL DEFAULT '1',
   `moderator` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=4 ;
 
 --
 -- Zrzut danych tabeli `users`
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `first_name`, `last_name`, `email`, `active`, `moderator`) VALUES
-(1, 'admin', 'e00cf25ad42683b3df678c61f42c6bda', 'Karol', 'Dzialowski', 'admin@admin.pl', 1, 1),
+(1, 'admin', 'e00cf25ad42683b3df678c61f42c6bda', 'Administrator', '', 'admin@admin.pl', 1, 1),
 (2, 'karol', 'f9b84a4e15aaed226618dbb267ff6a65', 'karol', '', 'karlososhd@gmail.com', 1, 0),
-(3, 'user', 'e10adc3949ba59abbe56e057f20f883e', 'karol', '', 'user@user.pl', 1, 0);
+(3, 'user', 'e10adc3949ba59abbe56e057f20f883e', 'Testowy', '', 'user@user.pl', 1, 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
