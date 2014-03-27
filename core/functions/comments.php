@@ -7,6 +7,7 @@
  * @package functions
  * @todo funkcja akualizowania komentarzy
  * @author Karol Dzialowski
+ * @copyright (c) 2014, Karol Działowski https://github.com/karlosos/SharU
  */
 
 /**

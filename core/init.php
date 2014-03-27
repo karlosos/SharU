@@ -6,6 +6,7 @@
  * W tym pliku dolaczamy pliki z funkcjami i inne konfiguracje.
  * @package configuration
  * @author Karol Dzialowski
+ * @copyright (c) 2014, Karol Działowski https://github.com/karlosos/SharU
  */
 session_start();
 //error_reporting(0);

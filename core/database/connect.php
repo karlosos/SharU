@@ -7,6 +7,7 @@
  * 
  * @package core
  * @author Karol Dzialowski
+ * @copyright (c) 2014, Karol Działowski https://github.com/karlosos/SharU
  */
 $connect_error = 'Przepraszamy za problemy';
 mysql_connect('localhost', 'root', '') or die($connect_error);

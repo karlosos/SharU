@@ -4,6 +4,7 @@
  * 
  * @package articles
  * @author Karol Dzialowski
+ * @copyright (c) 2014, Karol Działowski https://github.com/karlosos/SharU
  */
 include 'core/init.php';
 include 'includes/overall/header.php';
