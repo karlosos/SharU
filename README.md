@@ -1,15 +1,16 @@
 SharU
 =====
-Serwis udostępniania treści PHP
+Serwis udostępniania treści w języku PHP
 
 ## Co to jest?
-Jest to projekt tworzony na lekcjach wiaInternet. Upubliczniłem go do powrzechnego użytku z kilku powodów:
-* łatwiej śledzi się zmiany dzięki GIT
+Jest to projekt tworzony na lekcjach wiaInternet. Upubliczniłem go z kilku powodów:
+* łatwiej śledzi się zmiany dzięki rozproszonemu systemowi wersji
 * łatwiej pomaga się innym, wystarczy odesłać ich tutaj
-* ogólnie wszystko łatwiej, a po co sobie utrudniać.
+* ogólnie wszystko łatwiej, a po co sobie utrudniać
 
 Teoretycznie kod zamieszczony tutaj powinien być wykorzystany na stronie [Sharu](http://sharu.cba.pl), ale w praktyce często bywa on przestarzały.
 
+**Nie usuwać informacji o autorze i odnośników do repozytorium!**
 **Zezwalam na wszelkie kopiowanie, wzorowanie się i tym podobne, ale w przypadku jakichkolwiek kontrowersji (u nauczyciela) liczę na uczciwość. :-)**
 
 ### Jaka baza danych?
@@ -23,9 +24,9 @@ Konta z prawami użytkownika:
 * karol 123456
 
 ### Jak to ściągnąć?
-Gdzieś po prawej jest przycisk pobrania jako archiwum zip lub jeżeli korzystacie z gita powinniście umieć klonować repozytoria.
+Gdzieś po prawej jest przycisk pobrania jako archiwum zip lub jeżeli korzystacie z gita to już powinniście umieć klonować repozytoria.
 
 ### Czy mogę pomóc?
-Jasne, jestem otwarty na wszelkie propozycje
+Jasne, jestem otwarty na wszelkie propozycje, ale nie wszystkie zdołam wdrożyć.
 
 _Pozdr KarlososHD_
