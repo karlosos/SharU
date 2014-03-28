@@ -10,7 +10,6 @@ Jest to projekt tworzony na lekcjach wiaInternet. Upubliczniłem go z kilku powo
 
 Teoretycznie kod zamieszczony tutaj powinien być wykorzystany na stronie [Sharu](http://sharu.cba.pl), ale w praktyce często bywa on przestarzały.
 
-**Nie usuwać informacji o autorze i odnośników do repozytorium!**
 **Zezwalam na wszelkie kopiowanie, wzorowanie się i tym podobne, ale w przypadku jakichkolwiek kontrowersji (u nauczyciela) liczę na uczciwość. :-)**
 
 ### Jaka baza danych?
