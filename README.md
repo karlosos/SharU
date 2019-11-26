@@ -1,6 +1,8 @@
-SharU
+### http://sharu.cba.pl/
+
+SharU 2013
 =====
-Serwis udostępniania treści w języku PHP
+Serwis udostępniania treści w języku PHP.
 
 ## Co to jest?
 Jest to projekt tworzony na lekcjach wiaInternet. Upubliczniłem go z kilku powodów:
@@ -11,6 +13,8 @@ Jest to projekt tworzony na lekcjach wiaInternet. Upubliczniłem go z kilku powo
 Teoretycznie kod zamieszczony tutaj powinien być wykorzystany na stronie [Sharu](http://sharu.cba.pl), ale w praktyce często bywa on przestarzały.
 
 **Zezwalam na wszelkie kopiowanie, wzorowanie się i tym podobne, ale w przypadku jakichkolwiek kontrowersji (u nauczyciela) liczę na uczciwość. :-)**
+
+![https://i.imgur.com/FkafhmP.png](https://i.imgur.com/FkafhmP.png)
 
 ### Jaka baza danych?
 Plik /database/blog.sql importujcie do założonej bazy danych. Jeżeli nic nie zmienialiście, to powinna nazywac się blog.
