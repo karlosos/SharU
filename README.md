@@ -32,4 +32,16 @@ Gdzieś po prawej jest przycisk pobrania jako archiwum zip lub jeżeli korzystac
 ### Czy mogę pomóc?
 Jasne, jestem otwarty na wszelkie propozycje, ale nie wszystkie zdołam wdrożyć.
 
+### Docker in 2022
+
+Zaktualizowałem repo tak że projekt może być odpalony z dockera. Odpalamy cały projekt komendą:
+
+```
+docker compose up
+```
+
+Aplikacja powinna być dostępna pod adresem [localhost:3000](localhost:3000), phpmyadmin powinien być dostępny pod adresem [localhost:3001](localhost:3001). Credentiale do bazy danych to user:password i są zdefiniowane w `.env`. 
+
+Domyślnie baza danych powinna być wypełniona przez skrypt `./database/blog.sql`. Jeżeli tak się nie stało można zaimportować ten plik przez phpmyadmin.
+
 _Pozdr KarlososHD_
