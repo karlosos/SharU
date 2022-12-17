@@ -44,4 +44,10 @@ Aplikacja powinna być dostępna pod adresem [localhost:3000](localhost:3000), p
 
 Domyślnie baza danych powinna być wypełniona przez skrypt `./database/blog.sql`. Jeżeli tak się nie stało można zaimportować ten plik przez phpmyadmin.
 
+Jest problem z linią 
+
+> - "./database:/docker-entrypoint-initdb.d"
+
+W `docker-compose.yml`. Gdy ta linia jest to nie są ustawiane domyślne hasła dla użytkowników z `.env`. Do sprawdzenia. Aktualny workaround to odpalenie najpierw `docker-compose up` z zakomentowaną linią z initial scriptem a później z odkomentowaną.
+
 _Pozdr KarlososHD_
